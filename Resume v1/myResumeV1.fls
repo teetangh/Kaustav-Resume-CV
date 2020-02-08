@@ -21,21 +21,25 @@ INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.sty
+INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.sty
+INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
+INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
 INPUT c:\Users\Kaustav\Desktop\Kaustav Resume\Resume v1\myResumeV1.aux
 INPUT c:\Users\Kaustav\Desktop\Kaustav Resume\Resume v1\myResumeV1.aux
 OUTPUT c:\Users\Kaustav\Desktop\Kaustav Resume\Resume v1\myResumeV1.aux
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
-INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 OUTPUT c:\Users\Kaustav\Desktop\Kaustav Resume\Resume v1\myResumeV1.pdf
 INPUT C:\Users\Kaustav\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
@@ -46,8 +50,6 @@ INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsf
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
