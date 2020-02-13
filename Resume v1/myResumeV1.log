@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.2.8)  8 FEB 2020 22:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.2.8)  13 FEB 2020 22:29
 entering extended mode
 **"c:/Users/Kaustav/Desktop/Kaustav Resume/Resume v1/myResumeV1.tex"
 ("c:/Users/Kaustav/Desktop/Kaustav Resume/Resume v1/myResumeV1.tex"
@@ -124,7 +124,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \TX@delta=\dimen131
 \TX@cols=\count101
 \TX@ftn=\toks20
-) ("c:/Users/Kaustav/Desktop/Kaustav Resume/Resume v1\myResumeV1.aux")
+) ("c:/Users\Kaustav\Desktop\Kaustav Resume\Resume v1\myResumeV1.aux")
 \openout1 = `myResumeV1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -174,20 +174,20 @@ LaTeX Font Info:    ... okay on input line 8.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 58.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 60.
 ("C:\Users\Kaustav\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
  [1
 
 {C:/Users/Kaustav/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (3.115pt too wide) in paragraph at lines 91--96
+Overfull \hbox (3.115pt too wide) in paragraph at lines 93--98
 \OT1/cmr/bx/n/12 NPTEL\OT1/cmr/m/n/12 -Basic Elec-tron-ics,Computer Or-ga-ni-za-tion and Ar-chi-tec-ture, Switch-ing Cir-cuits and Logic
  []
 
-[2] ("c:/Users/Kaustav/Desktop/Kaustav Resume/Resume v1\myResumeV1.aux") ) 
+[2] ("c:/Users\Kaustav\Desktop\Kaustav Resume\Resume v1\myResumeV1.aux") ) 
 Here is how much of TeX's memory you used:
  1325 strings out of 492480
  18839 string characters out of 3120648
@@ -197,7 +197,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  30i,4n,34p,220b,144s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Kaustav/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Kaustav/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Kaustav/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Kaustav/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kaustav/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "c:/Users\Kaustav\Desktop\Kaustav Resume\Resume v1\myResumeV1.pdf" (2 pages, 85514 bytes).
+Output written on "c:/Users\Kaustav\Desktop\Kaustav Resume\Resume v1\myResumeV1.pdf" (2 pages, 85549 bytes).
 PDF statistics:
  29 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
