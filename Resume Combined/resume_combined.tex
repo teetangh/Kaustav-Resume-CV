@@ -7,8 +7,11 @@
 % \usepackage{hyperref}
 \usepackage[margin=0.3in]{geometry}
 
+\usepackage{MnSymbol}
+\usepackage{amsmath} 
 \usepackage{graphicx} 
-\usepackage{eso-pic} 
+\usepackage{eso-pic}
+\usepackage[hidelinks]{hyperref}
 
 \titleformat{\section}
 {\large\uppercase}
@@ -41,35 +44,49 @@
 
 \titlespacing*{\subsection}
 {0em}
-{0.2em}
+{0.1em}
 {0.1em}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   DOCUMENT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
 \thispagestyle{empty}  % for no page numbering
 
 % \begin{multicols}{2}
-%     \title{R\'esum\'e}
+%     \title{Resume}
 %     \author{Kaustav Ghosh}
 %     \maketitle
-%     \thispagestyle{empty}  %No page Numbering
-
-%     \columnbreak
-%     \subsection*{}
-%     \AddToShipoutPicture*
-%     {\put(500,700){\includegraphics[width=3cm,height=2cm]{image}}}
-
+%     \begin{flushright}
+%         \includegraphics[height=3cm]{kaustav2.jpeg}
+%     \end{flushright}
 % \end{multicols}
 
-\begin{multicols}{2}
-    \title{Resume}
-    \author{Kaustav Ghosh}
-    \maketitle
-    \begin{flushright}
-        \includegraphics[height=3cm]{kaustav2.jpeg}
-    \end{flushright}
-\end{multicols}
+\begin{center}
+    \huge{Kaustav Ghosh}
+
+    \normalsize{
+        \textit{
+            +91-8800441954 \(|\)
+            teetangh@gmail.com \(|\)
+            \href{https://www.github.com/teetangh}{GitHub} \(|\)
+            \href{https://www.linkedin.com/in/kaustav-ghosh-1538651bb/}{LinkedIn}
+        }}
+\end{center}
+
+\section*{Education}
+% \subsection*{
+%     Manipal Institute of Technology
+%     \begin{flushright}
+%         \text{2018-2022}
+%     \end{flushright}
+%     }
+
+% Left \hfill Center \hfill Right
+\textbf{Manipal Institute of Technology} \hfill \textit{2018-2022}
+\textmd{\newline \textit{BTech in Computer Science and Engineering specializing in Computational Intelligence}} \hfill \textit{CGPA: 8.4}
+\textmd{\newline \textit{Interests: Artificial Intelligence and Robotics}}
 
 \section*{Internships}
 \begin{itemize}
@@ -79,7 +96,7 @@
           % \newline
           % \textit{- Guided a team of 10 individuals to collaborate and accomplish a Regression task of price prediction of used cars}
           % \newline
-          % \textit{- Performed Feature Engineering to detect the most important attributes of the dataset using Univariate and Multivariate Filtering techniques, Mutual Entropy Gain Filtering and also feature selection using RMSE Regression and ANOVA Test  }
+          % \textit{- Performed Feature Engineering to detect the most important attributes of the data-set using Uni-variate and Multivariate Filtering techniques, Mutual Entropy Gain Filtering and also feature selection using RMSE Regression and ANOVA Test  }
           % \newline
           % \textit{- Performed basic Data wrangling and processing using numpy and pandas and visualized it using matplotlib and seaborn and finally built the machine learning model using an XGboost Regressor }
           % \newline
@@ -87,6 +104,7 @@
           % % \newline
           % % \textbf{ Mini Project:} \href{https://github.com/teetangh/Microsoft-Machine-Learning-Internship/blob/master/MINOR%20PROJECT/Microsoft_Minor_Project_v2.ipynb}{Notebook}.
 \end{itemize}
+
 \begin{itemize}
     \item{\textbf{\large{Qbotics Labs - Robot Operating System Internship}}}
           \newline
@@ -106,19 +124,29 @@
           % \newline
           % \textit{- Wrote \underline{Markdown documentation} for the entirety of the Internship for beginners to understand concepts and replicate results}
 \end{itemize}
+
+
 \begin{itemize}
     \item{\textbf{\large{United Nations TakenMind - Global Data Analytics Internship}}}
           \newline
-          \textit{- Performed Exploratory Data Analysis techniques using Matplotlib and Seaborn }
-          \newline
-          \textit{- Implemented several boxplots,countplots,heatmaps on several datasets}
-          \newline
-          \textit{- Documentated several practical examples of Numpy and Pandas }
+          \textit{- Performed Exploratory Data Analysis techniques using Matplotlib and
+              Implemented several boxplots,countplots,heatmaps on several data-sets using Seaborn }
 \end{itemize}
+
+
+% \begin{itemize}
+%     \item{\textbf{\large{Ineuron Deep Learning with Masters in Computer Vision and Natural Language Processing}}}
+%           \newline
+%           \textit{- Postponed due to Covid Situation }
+% \end{itemize}
+
+\section*{Research Projects}
 \begin{itemize}
-    \item{\textbf{\large{Ineuron Deep Learning with Masters in Computer Vision and Natural Language Processing}}}
+    \item{\textbf{\large{Samsung - Intelligent Ranking for Dynamic Restoration in
+                  Next Gen Wireless Networks}}}
           \newline
-          \textit{- Postponed due to Covid Situation }
+          \textit{- Implemented Machine Learning algorithms and Feature Engineering techniques to predict KPI values for eNodeB-s and consequently a ranking system
+              to orderly restore them during blackouts}
 \end{itemize}
 
 \section*{Academic Projects}
@@ -126,11 +154,20 @@
     \item{\textbf{\large{Compiler Frontend for subset of C-Language}}}
           % Don't know why indentation is not working
           \newline
-          \textit{- Coded a \textbf{Lexical Analyser} that extracts tokens from a C source file and a \textbf{Symbol Table Generator} to store information of identifiers and functions }
-          \newline
-          \textit{- Coded a \textbf{Recursive Decent Parser} that semantically parses the grammar for subset of C-Language by analysing the tokens generated by a Lexical Analyser}
+          \textit{- Coded a \textbf{Lexical Analyser} that extracts tokens from a C source file and a \textbf{Symbol Table Generator} to store information of identifiers and functions and a \textbf{Recursive Decent Parser} that semantically parses the grammar for subset of C-Language by analysing the tokens generated by a Lexical Analyser}
 
-    \item{\textbf{\large{Finland Labs in association with NSS IIT Roorkee - Covid 19 Data Analysis, Time Series Forecasting and Web Scraping}}}
+    \item{\textbf{\large{Mini Games based on Backtracking}}}
+          \newline
+          \textit{- Coded a \textbf{Crossword Solver} that takes a 10*10 grid and word list and outputs a grid with the words accurately filled}
+          \newline
+          \textit{- Coded a \textbf{Sudoku Solver} that takes a partially filled 9*9 Sudoku grid and outputs a solution so that every row, column and nine 3x3 sub-grids contains exactly 1 instance of the digits from 1 to 9.}
+
+    \item{\textbf{\large{Machine Learning Algorithm Implementations}}}
+          \newline
+          \textit{- Implemented basic machine learning algorithms such as Linear Regression, K-Nearest Neighbours and Logistic Regression from scratch without existing machine learning libraries.Currently working on implementing K-Means Clustering}
+
+
+    \item{\textbf{\large{Covid 19 Time Series Forecasting, Data Analysis and Web Scraping}}}
           % Don't know why indentation is not working
           \newline
           \textit{- Prepared a complete Data Analysis report on the World-wide COVID-19 attack statistics and used the Facebook's fbprophet Time-series Forecasting library to speculate the number of active corona victim cases in the upcoming days.}
@@ -151,14 +188,10 @@
           %\newline
           %\textit{- Used Python to import the Sine and Cosine thetas values to prove $\sin{^2\theta} + \cos{^2\theta} = 1$ }
 
-    \item{\textbf{Backtracking Algorithms}}
-          \newline
-          \textit{- Coded a \textbf{Crossword Solver} that takes a 10*10 grid and word list and outputs a grid with the words accurately filled}
-          \newline
-          \textit{- Coded a \textbf{Sudoku Solver} that takes a partially filled 9*9 sudoku grid and outputs a solution so that every row, column and nine 3x3 subgrids contains exactly 1 instance of the digits from 1 to 9.}
 
 
-    \item{\textbf{\large{Food Labs Robotics Startup Competition - ROS Engineer Role}}}
+
+    \item{\textbf{\large{Food Labs Robotics Startup Competition}}}
           \newline
           \textit{- Designed, modelled, constructed and
               Assembled a plethora of sensors and Robots across multiple software platforms like
@@ -176,7 +209,7 @@
 
     \item{\textbf{\large{Analysis of Selective Compliance Assembly Robot Arm and Modelling of T3R Robot}}}
           \newline
-          \textit{- Computed DH parameters for the SCARA robot and used it to formulate the Forward and Inverse Kinematics of the robot arm. Also formulated Lagrange Euler Dynamics}
+          \textit{- Computed DH parameters for the SCARA robot and used it to compute the Forward and Inverse Kinematics of the robot arm and also its Lagrange Euler Dynamics}
 
 
           % \newline
@@ -186,9 +219,11 @@
           % \newline
           % \textit{- Using Solidworks modelled a T3R robot (1 twisting joint and 3 revolute joints) and as bonus task i am trying to interface the Solidworks model with Matlab Simscape}
 \end{itemize}
-% \section{Technical Skills}
-\section*{Positions of Responsibility}
-\textmd{Local Committee Member of IOSD(International Organization of Software Developers)}
+
+
+% \section*{Positions of Responsibility}
+% \textmd{Local Committee Member of IOSD(International Organization of Software Developers)}
+
 % \section{Courses Taken}
 % % \subsection*{}
 % \textbf{Coding Ninjas}- Completed C++ \& Data Structures.Currently doing Algorithms \& Competitive Programming Course.
