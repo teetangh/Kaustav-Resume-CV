@@ -13,9 +13,20 @@
 \usepackage{eso-pic}
 \usepackage[hidelinks]{hyperref}
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=[rgb]{0,0,1},
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+
 \usepackage{ifthen}
 \newboolean{showProjectlinks}
 \setboolean{showProjectlinks}{true}
+
 
 \titleformat{\section}
 {\large\uppercase}
@@ -112,8 +123,8 @@
           \newline
           \textit{-Guided a team of 10 individuals to collaborate and accomplish a Regression task of price prediction of used cars in a machine learning pipeline through Exploratory Data Analysis,Feature Engineering and Model Building.}
           \ifthenelse{\boolean{showProjectlinks}}{
-              \textbf{Projects:}\href{https://github.com/teetangh/Microsoft-Machine-Learning-Internship/blob/master/MINOR\%20PROJECT/Microsoft_Minor_Project_v2.ipynb}{\text{[Minor]}}.
-              \href{https://github.com/Microsoft-ML-Internship-Team/Major-Project-Submissions}{\text{[Major]}}.
+              \textbf{Projects:}\href{https://nbviewer.jupyter.org/github/teetangh/Microsoft-Student-Partners-Machine-Learning-Internship/blob/main/MINOR\%20PROJECT/Microsoft_Minor_Project_v2.ipynb}{\text{[Minor]}}.
+              \href{https://nbviewer.jupyter.org/github/Microsoft-ML-Internship-Team/Major-Project-Submissions/tree/master/KAUSTAV/}{\text{[Major]}}.
           }{}
 
 \end{itemize}
@@ -179,7 +190,7 @@
           \newline
           \textit{- Prepared a complete Data Analysis report on the World-wide COVID-19 attack statistics and used the Facebook's fbprophet Time-series Forecasting library to speculate the number of active corona victim cases in the upcoming days.}
           \ifthenelse{\boolean{showProjectlinks}}{\textbf{Code:}
-              \href{https://github.com/teetangh/FinlandLabs-IITR-COVID-19-Analysis}{\text{[Project]}}.
+              \href{https://nbviewer.jupyter.org/github/teetangh/FinlandLabs-IITR-COVID-19-Analysis/tree/main}{\text{[Project]}}.
           }{}
     \item{\textbf{\large{Food Labs Robotics Startup Competition}}}
           \newline
