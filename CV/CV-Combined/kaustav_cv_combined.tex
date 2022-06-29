@@ -51,9 +51,9 @@
 % \homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 % \extrainfo{additional information}
 
-\homepage{github.com/teetangh}{GitHub}
-% \homepage{linkedin.com/in/kaustav-ghosh-1538651bb/}{LinkedIn}
-% \photo[70pt][0.4pt]{pictures/kaustav2} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+% \homepage{github.com/teetangh}{GitHub}
+\homepage{linkedin.com/in/kaustav-ghosh-1538651bb/}{LinkedIn}
+\photo[70pt][0.4pt]{"../pictures/kaustav2"} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 
 % \quote{"A witty and playful quotation" - John Smith}
 
@@ -107,9 +107,9 @@
 
 \section{Interests}
 Computer Science,
+Web Development,
+Software Engineering,
 Artificial Intelligence
-and
-Robotics
 
 
 %----------------------------------------------------------------------------------------
@@ -137,25 +137,44 @@ Robotics
 
 
 %------------------------------------------------
-% \subsection{AI internships}
+% \subsection{Dev internships}
 
-\cventry{Jun'21-Ongoing}
-{IoT Products and Analytics Summer Intern}
-{\textsc{Samsung Research}}
-{India}
+\cventry{Jan'22-Jun'22}
+{Software Development Engineer Intern}
+{\textsc{Hevo Data}}
+{Bangalore, India}
 {}
 {
-    % \begin{itemize}
-    %     \item{Postponed due to Covid situation}
-    % \end{itemize}
+    \textbf{ Manager :} \href{https://www.linkedin.com/in/aaghran/}{\textit{Aaghran Ghosh } (Product Manager @ HevoData)}.
+    \begin{itemize}
+        \item{Designed and implemented an end-to-end connector and SDK for the data source, Braze, a software as a service (SaaS) platform for Customer Engagement by deciding the source objects, the polling strategies, building the SDK authentication, models, client, and the connector offset, tasks, and services for polling each source object. All of this was supplemented by appropriate error handling for Socket Connection and Polling.}
+        \item{Worked on and resolved several bugs on already existing connectors tracked by Sentry and Coralogix}
+        \item{Worked on and resolved Google Big-Query and Marketo On-call issues supported with Senior developers}
+        \item{Developed Unit tests for Outbrain}
+    \end{itemize}
 }
 
+\cventry{Jun'21-Jul'21}
+{Software Engineer Intern - IoT Products and Analytics}
+{\textsc{Samsung Research}}
+{Bangalore, India}
+{}
+{
+    \textbf{ Manager :} \href{https://www.linkedin.com/in/shyamakshi/}{\textit{Shyamakshi Ghosh} (Senior Chief Engineer at Samsung R\&D Institute Bangalore)}.
+    \begin{itemize}
+        \item{Designed \& implemented MQTT bridge functionality for Moquette, an open-source lightweight Java MQTT broker.}
+        \item{Developed a socket programming system for transfer of messages between the MQTT message broker and the bridge client.}
+        \item{Developed a lexical analyzer to parse the user-specified configuration of the bridge properties.}
+    \end{itemize}
+}
 
+%------------------------------------------------
+% \subsection{AI/Robotics Internships}
 
 \cventry{Apr-Jun'20}
 {Machine Learning Intern}
 {\textsc{Microsoft Student Partners}}
-{India}
+{Remote, India}
 {}
 {
     \href{https://github.com/teetangh/Kaustav-All-Certifications/blob/master/Artificial\%20Intelligence/MSP\%20ML\%20Internship/internship\%20certificate.pdf}{ \textbf{\emph{Project Certificate}}.}
@@ -172,28 +191,25 @@ Robotics
     \href{https://github.com/Microsoft-ML-Internship-Team/Major-Project-Submissions/blob/master/KAUSTAV/03_Kaustav_Buidling_the_model_v1.ipynb}{\textbf{\emph{ Model Notebook}}.}
     \href{https://github.com/Microsoft-ML-Internship-Team/Major-Project-Submissions/blob/master/KAUSTAV/01_Kaustav_data_preprocess_EDA_v7.ipynb}{\textbf{\emph{ EDA Notebook}}}
 }
-%------------------------------------------------
-% \subsection{Robotics Internships}
 
-\cventry{Jul'20-Aug'20}
-{ROS Engineer Intern}
-{\textsc{Qbotics Labs}}
-{India}
-{}
-{
-    \textbf{ Mentor :} \href{https://in.linkedin.com/in/lentinjoseph}{\textit{Lentin Joseph} (author of 8 ROS books)}.
-    \textbf{ Project:} \href{https://github.com/teetangh/Qbotics-Labs-Internship-Differential-Drives}{Repository}.
-    \begin{itemize}
-        \item{Constructed a Differential Drive with caster wheel from scratch using URDF and XACRO files and mounted the same with laser scanner , Inertial Measurement Unit and Velodyne Puck VLP-16 Lidar. }
-        \item{Simulated the differential drive in \underline{Gazebo} and wrote ROS Subscriber script to get laser scan reading from sensor messages for obstacle range detection }
-        \item{Interfaced the differential drive with \underline{Google Cartographer} with localisation and mapping of the robot using lua config files. }
-              % \item{Currently working on motion planning(including obstacle avoidance and wallfolowing)}
-        \item{Modelled a 4 wheeled drive and also an environment for experimentation of various controllers for the vehicle in \underline{Webots 3D Robot Simulator}}
-        \item{Wrote individual C++ controllers for the teleoperation using keyboard,laser scanner,GPS,IMU \& Linear Actuator}
-        \item{Wrote \underline{Markdown documentation} for the entirety of the Internship for beginners to understand concepts and replicate results}
-    \end{itemize}
-}
-
+% \cventry{Jul'20-Aug'20}
+% {ROS Engineer Intern}
+% {\textsc{Qbotics Labs}}
+% {India}
+% {}
+% {
+%     \textbf{ Mentor :} \href{https://in.linkedin.com/in/lentinjoseph}{\textit{Lentin Joseph} (author of 8 ROS books)}.
+%     \textbf{ Project:} \href{https://github.com/teetangh/Qbotics-Labs-Internship-Differential-Drives}{Repository}.
+%     \begin{itemize}
+%         \item{Constructed a Differential Drive with caster wheel from scratch using URDF and XACRO files and mounted the same with laser scanner , Inertial Measurement Unit and Velodyne Puck VLP-16 Lidar. }
+%         \item{Simulated the differential drive in \underline{Gazebo} and wrote ROS Subscriber script to get laser scan reading from sensor messages for obstacle range detection }
+%         \item{Interfaced the differential drive with \underline{Google Cartographer} with localisation and mapping of the robot using lua config files. }
+%               % \item{Currently working on motion planning(including obstacle avoidance and wallfolowing)}
+%         \item{Modelled a 4 wheeled drive and also an environment for experimentation of various controllers for the vehicle in \underline{Webots 3D Robot Simulator}}
+%         \item{Wrote individual C++ controllers for the teleoperation using keyboard,laser scanner,GPS,IMU \& Linear Actuator}
+%         \item{Wrote \underline{Markdown documentation} for the entirety of the Internship for beginners to understand concepts and replicate results}
+%     \end{itemize}
+% }
 
 %------------------------------------------------
 
@@ -201,9 +217,12 @@ Robotics
 \cventry{May'20}
 {Data Analytics Intern}
 {\textsc{Takenmind Technologies}}
-{India}
+{Remote, India}
 {}
 {
+    \href{https://github.com/teetangh/Kaustav-All-Certifications/blob/master/Artificial\%20Intelligence/MSP\%20ML\%20Internship/internship\%20certificate.pdf}{ \textbf{\emph{Project Certificate}}.}
+    % \href{https://github.com/teetangh/Kaustav-All-Certifications/blob/master/Artificial\%20Intelligence/MSP\%20ML\%20Internship/Course\%20Completion\%20Certificate.pdf}{ \textbf{\emph{Python Foundations} Certificate.}}
+    \href{https://github.com/Kaggle-Workspace/UN-SDG-Takenmind-Internship-IBM-Employee-Attrition/blob/main/Major\%20Assignment/Predicition.ipynb}{ \textbf{\emph{Team Repository}}.}
     \begin{itemize}
         % \item{Performed Exploratory Data Analysis techniques using Matplotlib and Seaborn }
         % \item{Implemented several boxplots,countplots,heatmaps on several datasets}
@@ -212,40 +231,29 @@ Robotics
     \end{itemize}
 }
 
-% \cventry{Ongoing}
-% {Deep Learning with Masters in Computer Vision and NLP}
-% {\textsc{Ineuron Intelligence}}
-% {India}
-% {}
-% {
-%     % \begin{itemize}
-%     %     \item{Postponed due to Covid situation}
-%     % \end{itemize}
-% }
-
 
 %----------------------------------------------------------------------------------------
 %	ACHIEVEMENTS SECTION
 %----------------------------------------------------------------------------------------
-\section{Achievements}
+% \section{Achievements}
 
-\cvitem{2021}{Secured a GPA of \textbf{9.28} in 5th Semester}
-\cvitem{2020}{Among \textbf{top 4 out of 370} students in Competitive Coding contest to secure internship at \newline \textbf{Samsung Research Institute}, Summer '21}
-\cvitem{2020}{Secured a GPA of \textbf{9.14} in 4th Semester}
+% \cvitem{2021}{Secured a GPA of \textbf{9.28} in 5th Semester}
+% \cvitem{2020}{Among \textbf{top 4 out of 370} students in Competitive Coding contest to secure internship at \newline \textbf{Samsung Research Institute}, Summer '21}
+% \cvitem{2020}{Secured a GPA of \textbf{9.14} in 4th Semester}
 
-\newpage
 %----------------------------------------------------------------------------------------
 %	RESEARCH PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 \section{Research Projects}
 
-\cvitem{Nov'20-Ongoing}{
-    \textbf{Samsung PRISM}{Intelligent Ranking for Dynamic Restoration in Next Generation Wireless Networks}
+\cvitem{Oct'20-Mar'21}{
+    \textbf{Samsung PRISM }{Intelligent Ranking for Dynamic Restoration in Next Generation Wireless Networks}
     \begin{itemize}
         \item {Implemented Machine Learning algorithms and Feature Engineering techniques to predict KPI values for eNodeB-s and consequently a ranking system to orderly restore them during blackouts}
     \end{itemize}
 }
 
+\newpage
 %----------------------------------------------------------------------------------------
 %	ACADEMIC PROJECTS SECTION
 %----------------------------------------------------------------------------------------
@@ -259,6 +267,65 @@ Robotics
     \end{itemize}
 }
 
+
+\cvitem{Web Development}{
+    \textbf{Noteups - A Lecture Notes sharing platform}
+    \begin{itemize}
+        \item{Implemented the frontend using ReactJS and vanilla Redux, Redux Toolkit and RTK Query for state management, Framer
+              Motion for animations and Styled Components for styling, Media Queries for responsive design, Sass for CSS pre-processing and
+              Font Awesome for icons.}
+        \item{Implemented the backend using NodeJS and ExpressJS for server-side rendering, used MongoDB for NoSQL DB, Cloudinary for pdf and metadata storage, and PassportJS for JWT authentication and Social Login.}
+        \item{Implemented functionality to synchronize the note products between cloudinary and MongoDB.}
+        \item {Implemented cart functionality for users to add products to their cart and check out the cart.}
+        \item{Integrated the backend with Stripe card payments and working on integrating Paypal and Razorpay for subscription payments.}
+        \item {Setup automatic deployments of the frontend using Netlify and the backend using Heroku.}
+    \end{itemize}
+}
+
+
+
+
+\cvitem{Machine Learning \& Time Series Forecasting}{
+    % \textbf{Finland Labs in association with NSS IIT Roorkee - Covid-19 Data Analysis, Time Series Forecasting and Web Scraping}
+    \textbf{Covid-19 Data Analysis, Time Series Forecasting and Web Scraping}
+    \newline
+    \textbf{Link to Certificate :} \href{https://github.com/teetangh/Kaustav-All-Certifications/blob/master/Artificial\%20Intelligence/Finland\%20Labs\%20and\%20IITR/Covid\%2019\%20Analysis\%20-\%20AI\%20and\%20ML.pdf}{Certificate}.
+    \textbf{ Link to Code :} \href{https://github.com/teetangh/FinlandLabs-IITR-COVID-19-Analysis}{Repository}.
+    \begin{itemize}
+        \item{Prepared a complete Data Analysis report on the Worldwide COVID-19 attack statistics and used Facebook's Fbprophet Time-series Forecasting library to speculate the number of active corona victim cases in the upcoming days.}
+        \item{Also used a corona data-set of my country and the Python folium package for the binding of data to a map for choropleth visualizations. Further used Beautiful Soup and Requests HTTP library for Web Scraping of live corona stats. }
+        \item{Implemented code snippets for the pre-processing of data \& data wrangling and visualized the data via several Matplotlib and Seaborn tools }
+        \item{Created neural networks from scratch which facilitated in implementation of a machine learning model to recognize the function of an XOR gate without explicitly being programmed.}
+        \item{Trained a Deep Learning model with TF2 and Keras API for MNIST Handwritten digit Recognition}
+    \end{itemize}
+}
+
+\cvitem{Machine Learning}{
+    \textbf{Kaggle - Advanced House Price Prediction Regression Techniques}
+    \begin{itemize}
+        \item {With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, applied feature engineering and machine learning techniques to predict the final price of each home.}
+    \end{itemize}
+    \href{https://github.com/Kaggle-Workspace/House-Prices-Advanced-Regression-Techniques/blob/main/src/linear_reg_eda.ipynb}{\textbf{Repository}}.
+}
+
+\cvitem{Machine Learning \& Deep Learning}{
+    \textbf{Machine Learning \& Deep Learning Algorithms Implementations from scratch}
+    \begin{itemize}
+        \item {Implemented basic machine learning algorithms such as Linear Regression, K-Nearest Neighbours, Logistic Regression, and K-Means Clustering from scratch without existing machine learning libraries.Implemented a few gradient descent algorithms
+              }
+    \end{itemize}
+    \href{https://github.com/Kaggle-Workspace/Gradient-Descent-Algorithms/blob/main/Gradient-Descent-Algorithms.ipynb}{\textbf{Source Code}}.
+}
+
+\cvitem{Deep Learning}{
+    \textbf{Transformers family}
+    \begin{itemize}
+        \item {Working on developing a deep learning project using the Transformers library for text preprocessing, tokenization, and embedding.}
+        % \item {Implemented \textbf{Scaled Dot Product Attention Layer}, \textbf{Encoder Block}, \textbf{Decoder Block}, \textbf{IO Embeddeding layer \textit{for positional embeddings}}}
+    \end{itemize}
+    \href{https://github.com/teetangh/xtransformers-family/tree/main/basic-transformer}{\textbf{Repository}}.
+}
+
 \cvitem{ Algorithms \& Data Structures}{
     \textbf{Backtracking Algorithms}
     \begin{itemize}
@@ -267,56 +334,43 @@ Robotics
     \end{itemize}
 }
 
-\cvitem{Machine Learning and Time Series Forecasting}{
-    % \textbf{Finland Labs in association with NSS IIT Roorkee - Covid-19 Data Analysis, Time Series Forecasting and Web Scraping}
-    \textbf{Covid-19 Data Analysis, Time Series Forecasting and Web Scraping}
-    \newline
-    \textbf{Link to Certificate :} \href{https://github.com/teetangh/Kaustav-All-Certifications/blob/master/Artificial\%20Intelligence/Finland\%20Labs\%20and\%20IITR/Covid\%2019\%20Analysis\%20-\%20AI\%20and\%20ML.pdf}{Certificate}.
-    \textbf{ Link to Code :} \href{https://github.com/teetangh/FinlandLabs-IITR-COVID-19-Analysis}{Repository}.
-    \begin{itemize}
-        \item{Prepared a complete Data Analysis report on the World-wide COVID-19 attack statistics and used the Facebook's fbprophet Time-series Forecasting library to speculate the number of active corona victim cases in the upcoming days.}
-        \item{Also used a corona data-set of my country and the Python folium package for the binding of data to a map for choropleth visualizations. Further used Beautiful Soup and Requests HTTP library for Web Scraping of live corona stats. }
-        \item{Implemented code snippets for the pre-processing of data \& data wrangling and visualized the data via several Matplotlib and Seaborn tools }
-        \item{Created neural networks from scratch which facilitated in implementing a machine learning model to recognize the function of an XOR gate without explicitly being programmed.}
-        \item{Trained a Deep Learning model with TF2 and Keras API for MNIST Handwritten digit Recognition}
-    \end{itemize}
-}
-
-\cvitem{ROS-Gazebo Simulations}{
-    \textbf{Food Labs Robotics Startup Competition}
-    \newline
-    \textbf{ Models and Simulations :} \href{https://github.com/teetangh/Kaustav-ROS-Workspace}{Repository \& videos}.
-    \textbf{  Final Project Report:} \href{https://github.com/teetangh/Kaustav-ROS-Workspace/blob/master/Resources/Final\%20Report.pdf}{Final Report}.
-    \begin{itemize}
-        \item{Designed, modelled, constructed and assembled a plethora of sensors and Robots across multiple software platforms like FreeCad, Blender, Gazebo and also fabricated a hotel from floor-plan using Gazebo World Editor}
-        \item{Created an SDF model of the Velodyne HDL-32 sensor,improved the model's appearance and data output,added Mass/Inertia to the model,used FreeCad software to acquire Meshes, Blendr software to refine the metric system and Gazebo model editor to model the Velodyne Lidar structure.}
-        \item{Implemented Hokuyo Fake Laser Scanner and Noisy Camera in Gazebo, tweaked the mean \& standard deviation of the Gaussian Noise Distribution in the scan \& image samples for higher fidelity outputs.}
-        \item{Simulated the ROBOTIS waffle-pi or burger TurtleBot3 and constructed a vehicle in Gazebo Model editor and loaded it with a Depth Camera Sensor for surveillance}
-    \end{itemize}
-}
+% \cvitem{ROS-Gazebo Simulations}{
+%     \textbf{Food Labs Robotics Startup Competition}
+%     \newline
+%     \textbf{ Models and Simulations :} \href{https://github.com/teetangh/Kaustav-ROS-Workspace}{Repository \& videos}.
+%     \textbf{  Final Project Report:} \href{https://github.com/teetangh/Kaustav-ROS-Workspace/blob/master/Resources/Final\%20Report.pdf}{Final Report}.
+%     \begin{itemize}
+%         \item{Designed, modeled, constructed, and assembled a plethora of sensors and Robots across multiple software platforms like FreeCad, Blender, Gazebo and also fabricated a hotel from floor-plan using Gazebo World Editor}
+%         \item{Created an SDF model of the Velodyne HDL-32 sensor, improved the model's appearance and data output, added Mass/Inertia to the model, used FreeCad software to acquire Meshes, Blendr software to refine the metric system and Gazebo model editor to model the Velodyne Lidar structure.}
+%         \item{Implemented Hokuyo Fake Laser Scanner and Noisy Camera in Gazebo tweaked the mean \& standard deviation of the Gaussian Noise Distribution in the scan \& image samples for higher fidelity outputs.}
+%         \item{Simulated the ROBOTIS waffle-pi or burger TurtleBot3 and constructed a vehicle in Gazebo Model editor and loaded it with a Depth Camera Sensor for surveillance}
+%     \end{itemize}
+% }
 
 
-\cvitem{Solidworks Modelling}{
-    \textbf{Analysis of Selective Compliance Assembly Robot Arm and Modelling of T3R Robot}
-    \begin{itemize}
-        \item{Computed Denavit-Hartenberg parameters for the SCARA robot and used it to formulate the Forward and Inverse Kinematics of the robot arm}
-        \item{Used Lagrange Euler Formulation to compute the torque/dynamics of the robot and further also planned an arbitrary trajectory for the manipulator}
-        \item{Using Solidworks modelled a T3R robot (1 twisting joint and 3 revolute joints) and as bonus task i am trying to interface the Soliworks model with Matlab Simscape}
-    \end{itemize}
-    \textbf{ SCARA :} \href{https://github.com/teetangh/Robotics-Projects/blob/master/SCARA_Robot_Analysis.pdf}{SCARA Analysis}.
-    \textbf{ T3R :} \href{https://github.com/teetangh/Robotics-Projects/tree/master/T3R\%20Robot}{Solidworks Model}.
-    \textbf{ T3R animation :} \href{https://github.com/teetangh/Robotics-Projects/blob/master/T3R\%20Robot/Resources/T3R\%20Animation.mp4}{mp4 video}.
-}
+% \cvitem{Solidworks Modelling}{
+%     \textbf{Analysis of Selective Compliance Assembly Robot Arm and Modelling of T3R Robot}
+%     \begin{itemize}
+%         \item{Computed Denavit-Hartenberg parameters for the SCARA robot and used it to formulate the Forward and Inverse Kinematics of the robot arm}
+%         \item{Used Lagrange Euler Formulation to compute the torque/dynamics of the robot and further also planned an arbitrary trajectory for the manipulator}
+%         \item{Using Solidworks modelled a T3R robot (1 twisting joint and 3 revolute joints) and as bonus task i am trying to interface the Soliworks model with Matlab Simscape}
+%     \end{itemize}
+%     \textbf{ SCARA :} \href{https://github.com/teetangh/Robotics-Projects/blob/master/SCARA_Robot_Analysis.pdf}{SCARA Analysis}.
+%     \textbf{ T3R :} \href{https://github.com/teetangh/Robotics-Projects/tree/master/T3R\%20Robot}{Solidworks Model}.
+%     \textbf{ T3R animation :} \href{https://github.com/teetangh/Robotics-Projects/blob/master/T3R\%20Robot/Resources/T3R\%20Animation.mp4}{mp4 video}.
+% }
 
 
-% \newpage
+
+\newpage
+
 %----------------------------------------------------------------------------------------
 %	Positions of Responsibility SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Positions of Responsibility}
 
-\cvitem{Jan'20 - Present}{Local Committee Member of IOSD (International Organization of Software Developers)}
+\cvitem{Jan'20 - Jan'22}{Local Committee Member of IOSD (International Organization of Software Developers)}
 
 %----------------------------------------------------------------------------------------
 %	TECHNICAL SECTION
@@ -338,12 +392,11 @@ Robotics
     \textbf{Python}-Numpy, Pandas, Scikit-Learn, Keras, Tensorflow, PyTorch
     \textbf{Java}-JavaFX GUI}
 % \cvitem{Robotics Libraries \& Frameworks:}
-\cvitem{Robotics}{ROS middleware, Gazebo, Ignition, MoveIt!, Point Cloud Library}
-%\cvitem{Web-Dev Languages,Libraries \& Frameworks:}
-%Fair acquaintance with HTML, CSS, JavaScript \& with MERN %stack
-\cvitem{OS Used:}
-{{Windows}-XP,Vista,7,10
-{Linux}-Ubuntu}
+% \cvitem{Robotics}{ROS middleware, Gazebo, Ignition, MoveIt!, Point Cloud Library}
+\cvitem{Web-Dev:}{JavaScript, ReactJS, NodeJS, prefer MERN stack}
+% \cvitem{OS Used:}
+% {{Windows}-XP,Vista,7,10
+% {Linux}-Ubuntu}
 
 
 %----------------------------------------------------------------------------------------
@@ -355,14 +408,14 @@ Robotics
 \subsection{Off-Campus Academies and Online Courses}
 \cvitem{Coding Ninjas}{Competitive Programming}
 \cvlistitem {\href{https://github.com/teetangh/Kaustav-Competitive-Coding}{\textbf{Link to Cpp, Data structures and Algorithms Repository}}}
-\cvlistdoubleitem{\href{https://github.com/teetangh/Kaustav-All-Certifications/blob/master/Programming/Coding\%20Ninjas/Coding\%20Ninjas\%20Cpp\%20Completion\%20Certificate.pdf}{Link to Completion Certificate }}{\href{https://github.com/teetangh/Kaustav-All-Certifications/blob/master/Programming/Coding\%20Ninjas/Coding\%20Ninjas\%20Cpp\%20Top\%20Performer\%20Certificate.pdf}{Link to Top Performer Certificate }}
+\cvlistdoubleitem{\href{https://github.com/teetangh/certifications/blob/main/Programming/Coding\%20Ninjas/Coding\%20Ninjas\%20Cpp\%20Completion\%20Certificate.pdf}{Link to Completion Certificate }}{\href{https://github.com/teetangh/Kaustav-All-Certifications/blob/master/Programming/Coding\%20Ninjas/Coding\%20Ninjas\%20Cpp\%20Top\%20Performer\%20Certificate.pdf}{Link to Top Performer Certificate }}
 
 
 
 \subsection{College Curriculum}
 \cvitem{}{   Engineering Mathematics,
     Data Structures,
-    Object Oriented Programming with Java,
+    Object-Oriented Programming with Java,
     Digital System Design with Verilog,
     Computer Organization and Architecture,
     Database Systems,
@@ -384,13 +437,13 @@ Robotics
 
 % \section{Early Years}
 % \begin{itemize}
-%     \item Pulled an all nigther in 7th grade to construct a \textbf{LEGO Mindstorms EV2
-%               Humanoid Robot} and programmed it using the NXT-G GUI interface that could walk,talk
-%           and identify colors in its environment and showcased it in a Science exhibition.
-%     \item Won Gold medal for 200m sprint and 2 bronze medals fro 100m and 400m in 8th grade.
+%     \item Pulled an all-nighter in 7th grade to construct a \textbf{LEGO Mindstorms EV2
+%               Humanoid Robot} and programmed it using the NXT-G GUI interface that could walk, talk
+%           and identify colors in its environment and showcased them in a Science exhibition.
+%     \item Won Gold medal for 200m sprint and 2 bronze medals for 100m and 400m in 8th grade.
 %     \item Won \textbf{1st Prize} Trophy at state Level Abacus Competition in 5th grade
 %     \item Won \textbf{2nd Prize} Trophy at state Level Abacus Competition in 4th grade
-%     \item Won multiple gold, silver and bronze medals at the \textbf{School Level}  Science
+%     \item Won multiple gold, silver, and bronze medals at the \textbf{School Level}  Science
 %           and Maths Olympiads conducted by \textbf{Science Olympiad Foundation}
 % \end{itemize}
 

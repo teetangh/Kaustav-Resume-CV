@@ -28,5 +28,11 @@
         "!Split",
         "!Split sequence"
     ],
-    "ros.distro": "melodic"
+    "ros.distro": "melodic",
+    "grammarly.selectors": [
+        {
+            "language": "latex",
+            "scheme": "file"
+        }
+    ]
 }
