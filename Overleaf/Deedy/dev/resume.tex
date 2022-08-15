@@ -1,0 +1,169 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+
+% An alternate profile section 
+% \newcommand{\yourName}{Kaustav Ghosh}
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsiteLink}{\Large \yourName}} & 
+%     Email: \href{teetangh@gmail.com}{teetangh@gmail.com}
+%     \\
+%     \href{https://github.com/teetangh}{GitHub://teetangh} & 
+%     Mobile : +91-8800441954
+%     \\
+%     \href{https://www.linkedin.com/in/kaustav-ghosh-1538651bb/}{Linkedin://fkaustav-ghosh-1538651bb} & DOB : 15 Feb 2000
+%     \\
+% \end{tabular*}
+
+% An alternate profile section 
+\newcommand{\yourName}{Kaustav Ghosh}
+% How you want it to show up on the resume
+\newcommand{\yourWebsite}{website.com}
+% vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
+\newcommand{\yourWebsiteLink}{https://website.com}
+\newcommand{\yourEmail}{teetangh@gmail.com}
+\newcommand{\yourPhone}{+91-8800441954}
+\newcommand{\githubUserName}{teetangh}
+\newcommand{\linkedInUserName}{kaustav-ghosh-1538651bb/}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$ 
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}} 
+    % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Put school first and degree second if your school is reputable
+\educationHeading{Manipal Institute of Technology}{B. Tech Computer Science Engineering \hfill{CGPA: 8.54}}{Manipal, IN}{July 2018-2022} 
+
+% \educationHeading{Amity International School}{CBSE,Science \hfill{Aggregate: 91\%}}{Gurgaon, IN}{2015-2017}
+
+% \educationHeading{Suncity World School}{CBSE\hfill{Aggregate: 9.8/10}}{Gurgaon, IN}{July 2013-2015}
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+\resumeHeading{Hevo Data}{Software Development Engineer Intern}{Bangalore, IN}{Jan'22 – Aug'22}
+\begin{bullets}
+    \item Designed and implemented an end-to-end connector and SDK for the data source, Braze by deciding the source objects, the polling strategies, building the SDK authentication, models, \textbf{Feign client}, and the connector offset, tasks, and services for polling each source object in the \textbf{ETL} process. 
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    \item Worked on and resolved several bugs on already existing connectors tracked by \textbf{Sentry} and \textbf{Coralogix}
+    \item Resolved Google BigQuery \& Marketo On-call issues and wrote \textbf{unit tests} for Outbrain using \textbf{Junit5 and Mockito}
+\end{bullets}
+\sectionsep
+
+\resumeHeading{Samsung R\&D Institute}{Software Development Engineer Intern}{Bangalore, IN}{Jun'21 - Jul'21}
+\begin{bullets}
+    \item Designed and implemented \textbf{MQTT} bridge functionality in Moquette, an open-source lightweight \textbf{Java} MQTT broker
+    \item Implemented a \textbf{socket programming system} for the transfer of messages between the MQTT message broker and the bridge client and also a \textbf{lexical analyzer} to parse the user-specified configuration of the bridge properties
+\end{bullets}
+\sectionsep
+
+% \section{Research Experience}
+\resumeHeading{Samsung PRISM}{Machine Learning Intern}{Bangalore, IN}{Oct'20 – Mar'21}
+\begin{bullets}
+    \item Implemented Machine Learning algorithms and Feature Engineering techniques to predict KPI values for eNodeB-s and consequently a ranking system to orderly restore them during a network failure.
+\end{bullets}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+
+\projectHeading{Noteups - A Lecture Notes Sharing Platform}{https://github.com/The-Developer-Bros/noteups_web_original}{React,MongoDB,NodeJS,Stripe}
+\begin{bullets}
+    \item Implemented the frontend using \textbf{ReactJS} and \textbf{Redux} for state management, \textbf{Framer Motion} for animations and \textbf{Styled Components} for styling, \textbf{Sass} for CSS pre-processing and Font Awesome for icons.
+    \item Implemented the backend using \textbf{NodeJS and ExpressJS} for server-side rendering, used \textbf{MongoDB} for NoSQL DB, Cloudinary for pdf and metadata storage, and \textbf{PassportJS} for JWT authentication and Social OAuth Login.
+    \item Implemented functionality to synchronize the note products between cloudinary and MongoDB.
+    \item Integrated Payment gateway \textbf{Stripe} for creating subscription payments and working on integrating Razorpay. 
+    % \item Deployed the frontend on \textbf{Netlify} and backend on \textbf{Heroku} 
+\end{bullets}
+\sectionsep
+
+\projectHeading{Lexical Analyser and Recursive Decent Parser}{https://github.com/teetangh/Kaustav-CSE-LABS-and-Projects\#compiler-design-project}{C}
+\begin{bullets}
+    \item Implemented a \textbf{Lexical Analyser} that extracts tokens from a C source file and a Symbol Table Generator to store information of identifiers and functions \href{https://github.com/teetangh/Kaustav-CSE-LABS-and-Projects/blob/main/Sem05-Compiler-Design-LAB/LAB%2004/lab04_symbol_table_lexical_analyser_complete.c}{\textbf{[Source Code]}}
+    \item Implemented a \textbf{Recursive Decent Parser} that semantically parses the grammar for a subset of C-Language by analyzing the tokens generated by the Lexical Analyser, reports syntactic \& semantic errors 
+    \href{https://github.com/teetangh/Kaustav-CSE-LABS-and-Projects/blob/main/Sem05-Compiler-Design-LAB/LAB%200789/lab09_RDP_main.c}{\textbf{[Source Code]}}
+\end{bullets}
+\sectionsep
+
+\projectHeading{Microsoft Student Partners - Machine Learning Bootcamp}{https://github.com/Microsoft-ML-Internship-Team/Major-Project-Submissions/tree/master/KAUSTAV}{Python}
+\begin{bullets}
+    \item Guided a team of 10 individuals to collaborate and accomplish a Regression task of price prediction of used cars.
+    \item Performed Feature Engineering to extract the most important attributes of the data-set using Uni-variate and Multi-variate Filtering techniques, Mutual Entropy Gain Filtering, and also feature selection using RMSE Regression and ANOVA tests. 
+    % \item Performed basic Data wrangling and processing using Numpy and Pandas and visualized it using Matplotlib and Seaborn and finally built the machine learning model using an XGboost Regressor.
+    % \item Also completed a Mini Project on extensive Data Visualisation and Analysis using Mat-plotlib and Seaborn to gather useful insights of the data
+\end{bullets}
+\sectionsep
+
+\projectHeading{Finland Labs - Time Series Forecasting, Data
+Analysis \& Web Scraping}{https://github.com/teetangh/FinlandLabs-IITR-COVID-19-Analysis}{Python}
+\begin{bullets}
+    \item Prepared a complete Data Analysis report on the Worldwide COVID-19
+attack statistics and used Facebook’s Fbprophet Time-series Forecasting library to speculate the number of upcoming corona victim cases
+\end{bullets}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Technical Section}
+\begin{skillList}
+    \singleItem{Languages:}{C,\ C++,\ Java,\ Python,\ Javascript,\ Bash,\ SQL}
+    \\
+    \singleItem{Frontend Development:}{React,Redux Toolkit,RTK Query, Framer Motion,Styled Components}
+    \\
+    \singleItem{Backend Development:}{NodeJs,ExpressJs,MongoDB,MySQL,Django(basics)}
+    \\
+    \singleItem{Technology:}{Git \& GitHub, Docker, Kubernetes(basics), Cloudinary, Redis,Jira,Confluence,Postman,Maven}
+\end{skillList}
+
+% A more concise alternate 
+% \begin{skillList}
+%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{skillList}
+\end{document}
