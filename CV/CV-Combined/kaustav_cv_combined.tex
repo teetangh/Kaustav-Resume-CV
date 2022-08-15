@@ -48,8 +48,8 @@
 % \phone{(000) 111 1112}
 % \fax{(000) 111 1113}
 \email{teetangh@gmail.com}
-% \homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-% \extrainfo{additional information}
+% \homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the URL for the clickable link, and the second argument is the URL displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{date of birth: \textit{15/02/200}} % Insert any extra information you wish to display
 
 % \homepage{github.com/teetangh}{GitHub}
 \homepage{linkedin.com/in/kaustav-ghosh-1538651bb/}{LinkedIn}
@@ -119,8 +119,14 @@ Artificial Intelligence
 \section{Education}
 
 % \cventry{2011--2012}{Masters of Commerce}{The University of California}{Berkeley}{\textit{GPA -- 8.0}}{First Class Honours}  % Arguments not required can be left empty
-\cventry{2018--2022}{Bachelor of Technology in Computer Science \& Engineering}{\newline Manipal Institute of Technology}{Manipal}{}%{\textit{CGPA -- 8.3}}
-{Specializing in Computational Intelligence}
+\cventry{2018--2022}{Bachelor of Technology in Computer Science \& Engineering}{\newline Manipal Institute of Technology}{Manipal}{}
+{Specializing in Computational Intelligence \textit{(CGPA 8.57)}}
+
+\cventry{2015--2017}{Central Board of Secondary Education,Science}{\newline Amity International School}{Gurgaon,Sector-43}{}
+{\textit{Aggregate -- 91\%}}
+
+\cventry{2013--2015}{Central Board of Secondary Education,Science}{\newline Suncity World School}{Gurgaon,Sector-54}{}
+{\textit{(CGPA 9.8)}}
 
 % \section{Bachelor's Thesis}
 
@@ -163,7 +169,7 @@ Artificial Intelligence
     \textbf{ Manager :} \href{https://www.linkedin.com/in/shyamakshi/}{\textit{Shyamakshi Ghosh} (Senior Chief Engineer at Samsung R\&D Institute Bangalore)}.
     \begin{itemize}
         \item{Designed \& implemented MQTT bridge functionality for Moquette, an open-source lightweight Java MQTT broker.}
-        \item{Developed a socket programming system for transfer of messages between the MQTT message broker and the bridge client.}
+        \item{Developed a socket programming system for the transfer of messages between the MQTT message broker and the bridge client.}
         \item{Developed a lexical analyzer to parse the user-specified configuration of the bridge properties.}
     \end{itemize}
 }
@@ -201,11 +207,11 @@ Artificial Intelligence
 %     \textbf{ Mentor :} \href{https://in.linkedin.com/in/lentinjoseph}{\textit{Lentin Joseph} (author of 8 ROS books)}.
 %     \textbf{ Project:} \href{https://github.com/teetangh/Qbotics-Labs-Internship-Differential-Drives}{Repository}.
 %     \begin{itemize}
-%         \item{Constructed a Differential Drive with caster wheel from scratch using URDF and XACRO files and mounted the same with laser scanner , Inertial Measurement Unit and Velodyne Puck VLP-16 Lidar. }
+%         \item{Constructed a Differential Drive with caster wheel from scratch using URDF and XACRO files and mounted the same with a laser scanner, Inertial Measurement Unit and Velodyne Puck VLP-16 Lidar. }
 %         \item{Simulated the differential drive in \underline{Gazebo} and wrote ROS Subscriber script to get laser scan reading from sensor messages for obstacle range detection }
-%         \item{Interfaced the differential drive with \underline{Google Cartographer} with localisation and mapping of the robot using lua config files. }
-%               % \item{Currently working on motion planning(including obstacle avoidance and wallfolowing)}
-%         \item{Modelled a 4 wheeled drive and also an environment for experimentation of various controllers for the vehicle in \underline{Webots 3D Robot Simulator}}
+%         \item{Interfaced the differential drive with \underline{Google Cartographer} with localization and mapping of the robot using Lua config files. }
+%               % \item{Currently working on motion planning(including obstacle avoidance and wall following)}
+%         \item{Modelled a 4-wheeled drive and also an environment for experimentation of various controllers for the vehicle in \underline{Webots 3D Robot Simulator}}
 %         \item{Wrote individual C++ controllers for the teleoperation using keyboard,laser scanner,GPS,IMU \& Linear Actuator}
 %         \item{Wrote \underline{Markdown documentation} for the entirety of the Internship for beginners to understand concepts and replicate results}
 %     \end{itemize}
@@ -225,7 +231,7 @@ Artificial Intelligence
     \href{https://github.com/Kaggle-Workspace/UN-SDG-Takenmind-Internship-IBM-Employee-Attrition/blob/main/Major\%20Assignment/Predicition.ipynb}{ \textbf{\emph{Team Repository}}.}
     \begin{itemize}
         % \item{Performed Exploratory Data Analysis techniques using Matplotlib and Seaborn }
-        % \item{Implemented several boxplots,countplots,heatmaps on several datasets}
+        % \item{Implemented several boxplots,count plots,heatmaps on several datasets}
         % \item{Documented several practical examples of Numpy and Pandas }
         \item{Worked on Analyzing Industrial Data, predicting and presenting trends, using tools such as Exploratory Data Analysis, Machine Learning Algorithms and Data Organization-cum-visualization.}
     \end{itemize}
@@ -253,7 +259,7 @@ Artificial Intelligence
     \end{itemize}
 }
 
-\newpage
+% \newpage
 %----------------------------------------------------------------------------------------
 %	ACADEMIC PROJECTS SECTION
 %----------------------------------------------------------------------------------------
@@ -275,7 +281,7 @@ Artificial Intelligence
               Motion for animations and Styled Components for styling, Media Queries for responsive design, Sass for CSS pre-processing and
               Font Awesome for icons.}
         \item{Implemented the backend using NodeJS and ExpressJS for server-side rendering, used MongoDB for NoSQL DB, Cloudinary for pdf and metadata storage, and PassportJS for JWT authentication and Social Login.}
-        \item{Implemented functionality to synchronize the note products between cloudinary and MongoDB.}
+        \item{Implemented functionality to synchronize the note products between Cloudinary and MongoDB.}
         \item {Implemented cart functionality for users to add products to their cart and check out the cart.}
         \item{Integrated the backend with Stripe card payments and working on integrating Paypal and Razorpay for subscription payments.}
         \item {Setup automatic deployments of the frontend using Netlify and the backend using Heroku.}
@@ -353,7 +359,7 @@ Artificial Intelligence
 %     \begin{itemize}
 %         \item{Computed Denavit-Hartenberg parameters for the SCARA robot and used it to formulate the Forward and Inverse Kinematics of the robot arm}
 %         \item{Used Lagrange Euler Formulation to compute the torque/dynamics of the robot and further also planned an arbitrary trajectory for the manipulator}
-%         \item{Using Solidworks modelled a T3R robot (1 twisting joint and 3 revolute joints) and as bonus task i am trying to interface the Soliworks model with Matlab Simscape}
+%         \item{Using Solidworks modeled a T3R robot (1 twisting joint and 3 revolute joints) and as a bonus task I am trying to interface the Solidworks model with Matlab Simscape}
 %     \end{itemize}
 %     \textbf{ SCARA :} \href{https://github.com/teetangh/Robotics-Projects/blob/master/SCARA_Robot_Analysis.pdf}{SCARA Analysis}.
 %     \textbf{ T3R :} \href{https://github.com/teetangh/Robotics-Projects/tree/master/T3R\%20Robot}{Solidworks Model}.
@@ -362,7 +368,7 @@ Artificial Intelligence
 
 
 
-\newpage
+% \newpage
 
 %----------------------------------------------------------------------------------------
 %	Positions of Responsibility SECTION
