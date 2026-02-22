@@ -1,0 +1,110 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+
+\newcommand{\yourName}{Kaustav Ghosh}
+\newcommand{\yourEmail}{teetangh@gmail.com}
+\newcommand{\yourPhone}{+91-8800441954}
+\newcommand{\githubUserName}{teetangh}
+\newcommand{\linkedInUserName}{kaustav-ghosh-1538651bb}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}}
+    $|$ Bengaluru, India
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+\educationHeading{Manipal Institute of Technology}{B. Tech Computer Science \& Engineering (w/ Computational Intelligence) \hfill{CGPA: 8.57/10}}{Manipal, IN}{2018 -- 2022}
+
+%--------------------------------------------------------------
+%     Work Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+\resumeHeading{Couchbase}{Software Engineer}{Bengaluru, IN}{Jan 2023 -- Present}
+\begin{bullets}
+    \item Architected an AI agent tutorial framework using \textbf{Capella vector database} with \textbf{LangGraph/LangChain/LlamaIndex} orchestration, and built an evaluation pipeline with \textbf{Arize Phoenix} for automated relevance, hallucination, and toxicity scoring
+    \item Engineered enterprise data connectors for \textbf{GCP Looker Studio} and \textbf{Airbyte} ELT, and developed production RAG integrations with \textbf{Cohere}, \textbf{Claude AI}, \textbf{AWS Bedrock}, and \textbf{GraphRAG} using Microsoft's framework
+    \item Built quickstart reference applications in \textbf{TypeScript/Next.js}, \textbf{Java/Spring Boot}, \textbf{Ruby on Rails}, and \textbf{PHP/Laravel} with \textbf{Docker} containerization, \textbf{Swagger} documentation, and \textbf{GitHub Actions} CI/CD
+    \item Developed schema inference algorithms, a \textbf{React} import frontend, \textbf{MongoDB-to-Couchbase migration tools}, and expanded \textbf{React-TypeScript} test coverage from 60\% to over 90\% on the Capella cloud platform
+    \item Contributed over 149 pull requests across two Couchbase organizations, spanning AI/ML integrations, SDK tooling, \textbf{IntelliJ IDEA} plugin features, and developer documentation
+\end{bullets}
+\sectionsep
+
+\resumeHeading{Hevo Data}{Software Development Engineer Intern}{Bengaluru, IN}{Jan 2022 -- Jun 2022}
+\begin{bullets}
+    \item Designed and shipped an end-to-end \textbf{REST API connector} and \textbf{SDK} for Braze, implementing authentication, \textbf{Feign client} integration, and ETL polling services
+    \item Triaged production issues on BigQuery and Marketo connectors via \textbf{Sentry/Coralogix} observability, and wrote \textbf{JUnit 5/Mockito} test suites
+\end{bullets}
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+
+\projectHeadingWithDate{Familiarise -- Full-Stack Consulting Platform}{https://github.com/teetangh}{Next.js, Flutter, Prisma, Supabase, Redis}{2023 -- Present}
+\begin{bullets}
+    \item Architected a consulting platform with \textbf{Next.js} and \textbf{Flutter} clients, \textbf{Prisma/Supabase} backend, and \textbf{Redis} caching, integrating \textbf{Razorpay} payments, \textbf{Stream} video, and \textbf{Novu} notifications
+    \item Implemented booking algorithms, referral tracking with revenue sharing, role-based dashboards, and migrated auth from NextAuth v4 to \textbf{BetterAuth}, contributing 237 pull requests
+\end{bullets}
+\sectionsep
+
+\projectHeading{AI/ML Implementations}{https://github.com/teetangh}{Python, PyTorch, TensorFlow}
+\begin{bullets}
+    \item Built transformer architectures, GANs, DQN agents, video enhancement pipelines, stock forecasting systems, and a chess-playing RL engine across multiple open-source repositories
+\end{bullets}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{skillList}
+    \singleItem{Languages:}{TypeScript, Python, Java, Ruby, PHP, SQL, Bash}
+    \\
+    \singleItem{AI/ML:}{LangChain, LangGraph, LlamaIndex, PyTorch, Crew AI, Arize Phoenix, Langflow}
+    \\
+    \singleItem{Frameworks:}{React, Next.js, Spring Boot, Flutter, Prisma, Express.js}
+    \\
+    \singleItem{Cloud \& Data:}{Couchbase, AWS Bedrock, Azure AI, Docker, GitHub Actions, GCP, Redis, Supabase}
+    \\
+    \singleItem{Tools:}{Git, IntelliJ IDEA, Swagger/OpenAPI, Postman, Jira, Confluence}
+\end{skillList}
+
+\end{document}

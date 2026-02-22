@@ -1,0 +1,120 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+% Tighter vertical margins to fit content on one page
+\geometry{vmargin=0.75cm}
+\renewcommand{\sectionsep}[0]{\vspace{4pt}}
+
+%--------------------------------------------------------------
+% Convenience commands
+
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+
+\newcommand{\yourName}{Kaustav Ghosh}
+\newcommand{\yourEmail}{teetangh@gmail.com}
+\newcommand{\yourPhone}{+91-8800441954}
+\newcommand{\githubUserName}{teetangh}
+\newcommand{\linkedInUserName}{kaustav-ghosh-1538651bb}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}}
+    $|$ Bengaluru, India
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+\educationHeading{Manipal Institute of Technology}{B. Tech Computer Science \& Engineering (w/ Computational Intelligence) \hfill{CGPA: 8.57/10}}{Manipal, IN}{2018 -- 2022}
+
+%--------------------------------------------------------------
+%     Work Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+\resumeHeading{Couchbase}{Software Engineer}{Bengaluru, IN}{Jan 2023 -- Present}
+\begin{bullets}
+    \item Architected an AI agent tutorial framework leveraging \textbf{Capella vector database}, \textbf{Agent Catalog}, and orchestration via \textbf{LangGraph}, \textbf{LangChain}, and \textbf{LlamaIndex} for production-ready agentic applications
+    \item Engineered a RAG evaluation pipeline using \textbf{Arize Phoenix} with automated scoring across relevance, hallucination detection, QA accuracy, and toxicity for LLM-powered applications
+    \item Built production RAG integrations with \textbf{Cohere}, \textbf{Voyage AI}, \textbf{JinaAI}, \textbf{Claude AI}, \textbf{Azure AI}, \textbf{AWS Bedrock}, and \textbf{Crew AI}, and implemented \textbf{GraphRAG} using Microsoft's framework with Couchbase vector storage
+    \item Developed a \textbf{Langflow-Couchbase} integration enabling no-code construction of production RAG pipelines with Couchbase as the vector store
+    \item Contributed 149+ pull requests across couchbase-examples and Couchbase-Ecosystem organizations, driving the company's AI/ML developer experience and vector search strategy
+\end{bullets}
+\sectionsep
+
+\resumeHeading{Hevo Data}{SDE Intern -- SaaS Integrations}{Bengaluru, IN}{Jan 2022 -- Jun 2022}
+\begin{bullets}
+    \item Designed an end-to-end \textbf{REST API connector} and data pipeline \textbf{SDK} for Braze, implementing source object selection, polling strategies, SDK authentication, models, client, and ETL services
+    \item Resolved production data pipeline bugs on connectors using \textbf{Sentry}/\textbf{Coralogix} and triaged \textbf{BigQuery} and \textbf{Marketo} on-call issues
+    \item Authored unit tests for Outbrain connector using \textbf{JUnit 5} and \textbf{Mockito}, subject to code review
+\end{bullets}
+\sectionsep
+
+\resumeHeading{Samsung India}{SDE Intern -- IoT Products \& Analytics}{Bengaluru, IN}{Jun 2021 -- Jul 2021}
+\begin{bullets}
+    \item Designed and implemented \textbf{MQTT bridge} functionality in Moquette, an open-source lightweight \textbf{Java} MQTT broker
+    \item Implemented a \textbf{socket programming system} for MQTT message transfer and a \textbf{lexical analyzer} to parse bridge configuration
+\end{bullets}
+\sectionsep
+
+\resumeHeading{Samsung PRISM}{Machine Learning Intern}{Bengaluru, IN}{Oct 2020 -- Mar 2021}
+\begin{bullets}
+    \item Implemented ML algorithms and feature engineering to predict KPI values for eNodeB base stations and built an intelligent ranking system for orderly network restoration during failures
+\end{bullets}
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+
+\projectHeadingWithDate{Familiarise -- Consulting Web App}{https://github.com/teetangh}{Next.js, Flutter, Prisma, Supabase, Redis}{2023 -- Present}
+\begin{bullets}
+    \item Built a consulting web app with \textbf{Next.js}, \textbf{Flutter}, \textbf{Prisma}, and \textbf{Supabase}, integrating \textbf{Razorpay} payments, \textbf{Stream} video, and \textbf{Novu} notifications (237 PRs)
+\end{bullets}
+\sectionsep
+
+\projectHeading{Finland Labs \& IIT Roorkee -- Time Series Forecasting}{https://github.com/teetangh/FinlandLabs-IITR-COVID-19-Analysis}{Python, fbprophet}
+\begin{bullets}
+    \item Built time-series forecasting with \textbf{fbprophet} for COVID-19 case prediction and implemented neural networks from scratch for XOR gate function recognition
+\end{bullets}
+\sectionsep
+
+\projectHeading{Microsoft Student Partners -- ML Bootcamp}{https://github.com/Microsoft-ML-Internship-Team}{Python, XGBoost}
+\begin{bullets}
+    \item Led a team of 10 to build an ML pipeline for used car price prediction through EDA, feature engineering, and \textbf{XGBoost} regression
+\end{bullets}
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{skillList}
+    \singleItem{Languages:}{Python, TypeScript, Java, SQL, Bash}
+    \\
+    \singleItem{AI/ML:}{LangChain, LangGraph, LlamaIndex, PyTorch, TensorFlow, Crew AI, Arize Phoenix, Langflow}
+    \\
+    \singleItem{AI Services:}{OpenAI, Claude AI, Cohere, AWS Bedrock, Azure AI, Voyage AI, JinaAI, GraphRAG}
+    \\
+    \singleItem{Infra \& Tools:}{Couchbase Capella, Docker, GitHub Actions, Git, React, Next.js, Supabase, Redis, Postman}
+\end{skillList}
+
+\end{document}
