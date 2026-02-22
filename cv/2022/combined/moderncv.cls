@@ -1,0 +1,1 @@
+../../shared/moderncv/moderncv.cls
